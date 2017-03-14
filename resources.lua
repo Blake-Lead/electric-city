@@ -46,6 +46,19 @@ quads.plant[1]    = love.graphics.newQuad(64 * 2, 64 * 4, 64, 64, images.icons:g
 quads.plant[2]    = love.graphics.newQuad(64 * 2, 64 * 5, 64, 64, images.icons:getDimensions())
 quads.plant[3]    = love.graphics.newQuad(64 * 2, 64 * 6, 64, 64, images.icons:getDimensions())
 
+-- accumulator button
+quads.accumulatorbtn    = {}
+quads.accumulatorbtn[0] = love.graphics.newQuad(64 * 3, 64 * 0, 64, 64, images.icons:getDimensions())
+quads.accumulatorbtn[1] = love.graphics.newQuad(64 * 3, 64 * 1, 64, 64, images.icons:getDimensions())
+quads.accumulatorbtn[2] = love.graphics.newQuad(64 * 3, 64 * 2, 64, 64, images.icons:getDimensions())
+
+-- accumulator icon
+quads.accumulator       = {}
+quads.accumulator[0]    = love.graphics.newQuad(64 * 3, 64 * 3, 64, 64, images.icons:getDimensions())
+quads.accumulator[1]    = love.graphics.newQuad(64 * 3, 64 * 4, 64, 64, images.icons:getDimensions())
+quads.accumulator[2]    = love.graphics.newQuad(64 * 3, 64 * 5, 64, 64, images.icons:getDimensions())
+quads.accumulator[3]    = love.graphics.newQuad(64 * 3, 64 * 6, 64, 64, images.icons:getDimensions())
+
 -- health icon
 quads.health      = {}
 quads.health[0]   = love.graphics.newQuad(16 * 9, 0, 16, 64, images.elements:getDimensions())

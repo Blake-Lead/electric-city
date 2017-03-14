@@ -3,8 +3,10 @@
 function love.load()
   require 'globals'
   require 'resources'
+
   Log.outfile = 'debug.log'
-  Log.debug('Log file creation')
+  Log.debug('Starting game.')
+  
   Gamestate.registerEvents()
   Gamestate.switch(Game)
 end

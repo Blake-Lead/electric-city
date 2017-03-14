@@ -18,7 +18,7 @@ function element:update(dt) --[[>]] Draggable.update(self, dt)
   -- check if element is hovered
   self.hovered = self.rect:contains(love.mouse.getX(), love.mouse.getY())
   -- set status of element in order to display the right icon
-  if self.pressed then self.status = 3
+  if self.dragged then self.status = 3
   elseif self.hovered then self.status = 2
   elseif self.active then self.status = math.floor(os.clock() * 10) % 2
   else self.status = 0 end
@@ -28,8 +28,7 @@ function element:update(dt) --[[>]] Draggable.update(self, dt)
 end
 
 function element:mousepressed(x, y, button) --[[>]] Draggable.mousepressed(self, x, y, button)
-  -- as soon as the element is dropped (first time pressed) it cannot be dragged again
-  self.draggable = false
+  if button == 1 and self.rect:contains(x, y) then self.draggable = not self.draggable end
 end
 
 function element:draw()
