@@ -1,0 +1,32 @@
+function love.conf(t)
+  t.window.title      = 'electric city'
+  t.identity          = nil                -- The name of the save directory
+  t.console           = false              -- Attach a console (for Windows)
+  t.window.icon       = 'assets/icon.png'  -- Filepath to an image to use as the window's icon
+  t.window.width      = 1024               -- The window width
+  t.window.height     = 768                -- The window height
+  t.window.minwidth   = 1024               -- Minimum window width if the window is resizable
+  t.window.minheight  = 768                -- Minimum window height if the window is resizable
+  t.window.borderless = false              -- Remove all border visuals from the window
+  t.window.resizable  = false              -- Let the window be user-resizable
+  t.window.fullscreen = false              -- Enable fullscreen
+  t.window.vsync      = true               -- Enable vertical sync
+  t.window.fsaa       = 0                  -- The number of samples to use with multi-sampled antialiasing
+  t.window.display    = 1                  -- Index of the monitor to show the window in
+  t.window.highdpi    = false              -- Enable high-dpi mode for the window on a Retina display
+  t.window.srgb       = false              -- Enable sRGB gamma correction when drawing to the screen
+  t.modules.audio     = true               -- Enable audio module
+  t.modules.event     = true               -- Enable event module
+  t.modules.graphics  = true               -- Enable graphics module
+  t.modules.image     = true               -- Enable image module
+  t.modules.joystick  = true               -- Enable joystick module
+  t.modules.keyboard  = true               -- Enable keyboard module
+  t.modules.math      = true               -- Enable math module
+  t.modules.mouse     = true               -- Enable mouse module
+  t.modules.physics   = true               -- Enable physics module
+  t.modules.sound     = true               -- Enable sound module
+  t.modules.system    = true               -- Enable system module
+  t.modules.timer     = true               -- Enable timer module
+  t.modules.window    = true               -- Enable window module
+  t.modules.thread    = true               -- Enable thread module
+end
