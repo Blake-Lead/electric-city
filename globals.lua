@@ -21,7 +21,7 @@ Accumulator = require 'modules.accumulator'
 House       = require 'modules.house'
 Plant       = require 'modules.plant'
 Pole        = require 'modules.pole'
-Powerline        = require 'modules.powerline'
+Powerline   = require 'modules.powerline'
 
 screen = {
   width  = love.graphics.getWidth(),
