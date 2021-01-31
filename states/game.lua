@@ -11,7 +11,7 @@ elements.accumulators  = {}
 
 function game:init()
   -- background rectangle
-  self.background = Rectangle(0, 0, screen.width, screen.height, Color.peachd(-50))
+  self.background = Rectangle(0, 0, screen.width, screen.height, Color.PEACH)
   -- buttons
   elements.buttons = {}
   elements.buttons.house       = Button('house',       quads.housebtn,        10, screen.height - 74)
